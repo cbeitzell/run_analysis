@@ -8,8 +8,14 @@ runAnalysis <- function() {
         
         featureDef <- read.table("features.txt")
         meanStdList <- featureDef[grepl("^.*mean..$|^.*std..$|^.*mean..-[XYZ]$|^.*std..-[XYZ]$",featureDef$V2, perl = TRUE),]
-        featureDef$V2 <- gsub("^f","Frequency",gsub("^t","Time",gsub("[:():]","",featureDef$V2)))
-        featureDef$V2 <- gsub("std","StandardDeviation",gsub("mean","Average",gsub("[:():]","",featureDef$V2)))
+        
+        featureDef$V2 <- gsub("^f","Frequency.",gsub("^t","Time.",gsub("[:():]","",featureDef$V2)))
+        featureDef$V2 <- gsub("std","Standard.Deviation",gsub("mean","Average",gsub("[:():]","",featureDef$V2)))
+        featureDef$V2 <- gsub("Acc",".Accelerometer",featureDef$V2)
+        featureDef$V2 <- gsub("Gyro",".Gyroscope",featureDef$V2)
+        featureDef$V2 <- gsub("Jerk",".Jerk",featureDef$V2)
+        featureDef$V2 <- gsub("Mag",".Mag",featureDef$V2)
+        
         activityDef <- read.table("activity_labels.txt")
         
         trainDF <- getData("train",featureDef$V2,activityDef,meanStdList)
