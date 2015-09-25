@@ -277,10 +277,9 @@
 
 <hr>
 
-<p>
 Subject							2
-	Test Volunteer subject number
-		1..30 .Unique identifier assigned to test subject
+>	Test Volunteer subject number
+>>		1..30 .Unique identifier assigned to test subject
 
 Activity						18
 	Activity performed during tests
@@ -291,7 +290,6 @@ Activity						18
 		STANDING
 		LAYING
 
-</p>
 Time.Body.Accelerometer.Mean.X				14
 	The Mean of the body linear acceleration derived in time for the X axis from the accelerometer.
 		-1.00000000000..1.00000000000
