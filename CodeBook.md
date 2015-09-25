@@ -278,17 +278,17 @@
 <hr>
 
 > #### Subject 							2
-> Test Volunteer subject number
->> * 1..30 .Unique identifier assigned to test subject
+>> Test Volunteer subject number
+>>> * 1..30 .Unique identifier assigned to test subject
 
 > #### Activity						18
-> Activity performed during tests
->> * WALKING
->> * WALKING_UPSTAIRS
->> * WALKING_DOWNSTAIRS
->> * SITTING
->> * STANDING
->> * LAYING
+>> Activity performed during tests
+>>> * WALKING
+>>> * WALKING_UPSTAIRS
+>>> * WALKING_DOWNSTAIRS
+>>> * SITTING
+>>> * STANDING
+>>> * LAYING
 
 > #### Time.Body.Accelerometer.Mean.X
 > The Mean of the body linear acceleration derived in time for the X axis from the accelerometer.
