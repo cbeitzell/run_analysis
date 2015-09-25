@@ -290,135 +290,135 @@
 >> * STANDING
 >> * LAYING
 
-> #### Time.Body.Accelerometer.Mean.X>> * > 	14
+> #### Time.Body.Accelerometer.Mean.X
 > The Mean of the body linear acceleration derived in time for the X axis from the accelerometer.
 >> * -1.00000000000..1.00000000000
 
-> #### Time.Body.Accelerometer.Mean.Y>> * > 	14
+> #### Time.Body.Accelerometer.Mean.Y
 > The Mean of the body linear acceleration derived in time for the Y axis from the accelerometer.
 >> * -1.00000000000..1.00000000000
 
-> #### Time.Body.Accelerometer.Mean.Z>> * > 	14
+> #### Time.Body.Accelerometer.Mean.Z
 > The Mean of the body linear acceleration derived in time for the X axis from the accelerometer.
 >> * -1.00000000000..1.00000000000
 
-> #### Time.Body.Accelerometer.Standard.Deviation.X>> * 14
+> #### Time.Body.Accelerometer.Standard.Deviation.X
 > The Standard Deviation of the body linear acceleration derived in time for the X axis from the accelerometer.
 >> * -1.00000000000..1.00000000000
 
-> #### Time.Body.Accelerometer.Standard.Deviation.Y>> * 14
+> #### Time.Body.Accelerometer.Standard.Deviation.Y
 > The Standard Deviation of the body linear acceleration derived in time for the Y axis from the accelerometer.
 >> * -1.00000000000..1.00000000000
 
-> #### Time.Body.Accelerometer.Standard.Deviation.Z>> * 14
+> #### Time.Body.Accelerometer.Standard.Deviation.Z
 > The Standard Deviation of the body linear acceleration derived in time for the Z axis from the accelerometer.
 >> * -1.00000000000..1.00000000000
 
-> #### Time.Gravity.Accelerometer.Mean.X>> * > 14
+> #### Time.Gravity.Accelerometer.Mean.X
 > The Mean of the gravity acceleration derived in time for the X axis from the accelerometer.
 >> * -1.00000000000..1.00000000000
 
-> #### Time.Gravity.Accelerometer.Mean.Y>> * > 14
+> #### Time.Gravity.Accelerometer.Mean.Y
 > The Mean of the gravity acceleration derived in time for the Y axis from the accelerometer.
 >> * -1.00000000000..1.00000000000
 
-> #### Time.Gravity.Accelerometer.Mean.Z>> * > 14
+> #### Time.Gravity.Accelerometer.Mean.Z
 > The Mean of the gravity acceleration derived in time for the Z axis from the accelerometer.
 >> * -1.00000000000..1.00000000000
 
-> #### Time.Gravity.Accelerometer.Standard.Deviation.X>> * 14
+> #### Time.Gravity.Accelerometer.Standard.Deviation.X
 > The Standard Deviation of the gravity acceleration derived in time for the X axis from the accelerometer.
 >> * -1.00000000000..1.00000000000
 
-> #### Time.Gravity.Accelerometer.Standard.Deviation.Y>> * 14
+> #### Time.Gravity.Accelerometer.Standard.Deviation.Y
 > The Standard Deviation of the gravity acceleration derived in time for the Y axis from the accelerometer.
 >> * -1.00000000000..1.00000000000
 
-> #### Time.Gravity.Accelerometer.Standard.Deviation.Z>> * 14
+> #### Time.Gravity.Accelerometer.Standard.Deviation.Z
 > The Standard Deviation of the gravity acceleration derived in time for the Z axis from the accelerometer.
 >> * -1.00000000000..1.00000000000
 
-> #### Time.Body.Accelerometer.Jerk.Mean.X>> * > 14
+> #### Time.Body.Accelerometer.Jerk.Mean.X
 > The Mean of the jerk signals obtained from the body linear acceleration derived in time for the X axis of the accelerometer.
 >> * -1.00000000000..1.00000000000
 
-> #### Time.Body.Accelerometer.Jerk.Mean.Y>> * > 14
+> #### Time.Body.Accelerometer.Jerk.Mean.Y
 > The Mean of the jerk signals obtained from the body linear acceleration derived in time for the Y axis of the accelerometer.
 >> * -1.00000000000..1.00000000000
 
-> #### Time.Body.Accelerometer.Jerk.Mean.Z>> * > 14
+> #### Time.Body.Accelerometer.Jerk.Mean.Z
 > The Mean of the jerk signals obtained from the body linear acceleration derived in time for the Z axis of the accelerometer.
 >> * -1.00000000000..1.00000000000
 
-> #### Time.Body.Accelerometer.Jerk.Standard.Deviation.X> 14
+> #### Time.Body.Accelerometer.Jerk.Standard.Deviation.X
 > The Standard Deviation of the jerk signals obtained from the body linear acceleration derived in time for the X axis of the accelerometer.
 >> * -1.00000000000..1.00000000000
 
-> #### Time.Body.Accelerometer.Jerk.Standard.Deviation.Y> 14
+> #### Time.Body.Accelerometer.Jerk.Standard.Deviation.Y
 > The Standard Deviation of the jerk signals obtained from the body linear acceleration derived in time for the Y axis of the accelerometer.
 >> * -1.00000000000..1.00000000000
 
-> #### Time.Body.Accelerometer.Jerk.Standard.Deviation.Z> 14
+> #### Time.Body.Accelerometer.Jerk.Standard.Deviation.Z
 > The Standard Deviation of the jerk signals obtained from the body linear acceleration derived in time for the Z axis of the accelerometer.
 >> * -1.00000000000..1.00000000000
 
-> #### Time.Body.Gyroscope.Mean.X>> * > 	14
+> #### Time.Body.Gyroscope.Mean.X
 > The Mean of the body angular velocity derived in time for the X axis from the gyroscope.
 >> * -1.00000000000..1.00000000000
 
-> #### Time.Body.Gyroscope.Mean.Y>> * > 	14
+> #### Time.Body.Gyroscope.Mean.Y
 > The Mean of the body angular velocity derived in time for the Y axis from the gyroscope.
 >> * -1.00000000000..1.00000000000
 
-> #### Time.Body.Gyroscope.Mean.Z>> * > 	14
+> #### Time.Body.Gyroscope.Mean.Z
 > The Mean of the body angular velocity derived in time for the Z axis from the gyroscope.
 >> * -1.00000000000..1.00000000000
 
-> #### Time.Body.Gyroscope.Standard.Deviation.X>> * 14
+> #### Time.Body.Gyroscope.Standard.Deviation.X
 > The Standard Deviation of the body angular velocity derived in time for the X axis from the gyroscope.
 >> * -1.00000000000..1.00000000000
 
-> #### Time.Body.Gyroscope.Standard.Deviation.Y>> * 14
+> #### Time.Body.Gyroscope.Standard.Deviation.Y
 > The Standard Deviation of the body angular velocity derived in time for the Y axis from the gyroscope.
 >> * -1.00000000000..1.00000000000
 
-> #### Time.Body.Gyroscope.Standard.Deviation.Z>> * 14
+> #### Time.Body.Gyroscope.Standard.Deviation.Z
 > The Standard Deviation of the body angular velocity derived in time for the Z axis from the gyroscope.
 >> * -1.00000000000..1.00000000000
 
-> #### Time.Body.Gyroscope.Jerk.Mean.X>> * > 	14
+> #### Time.Body.Gyroscope.Jerk.Mean.X
 > The Mean of the jerk signals obtained from the body angular velocity derived in time for the X axis of the gyroscope.
 >> * -1.00000000000..1.00000000000
 
-> #### Time.Body.Gyroscope.Jerk.Mean.Y>> * > 	14
+> #### Time.Body.Gyroscope.Jerk.Mean.Y
 > The Mean of the jerk signals obtained from the body angular velocity derived in time for the Y axis of the gyroscope.
 >> * -1.00000000000..1.00000000000
 
-> #### Time.Body.Gyroscope.Jerk.Mean.Z>> * > 	14
+> #### Time.Body.Gyroscope.Jerk.Mean.Z
 > The Mean of the jerk signals obtained from the body angular velocity derived in time for the Z axis of the gyroscope.
 >> * -1.00000000000..1.00000000000
 
-> #### Time.Body.Gyroscope.Jerk.Standard.Deviation.X>> * 14
+> #### Time.Body.Gyroscope.Jerk.Standard.Deviation.X
 > The Standard Deviation of the jerk signals obtained from the body angular velocity derived in time for the X axis of the gyroscope.
 >> * -1.00000000000..1.00000000000
 
-> #### Time.Body.Gyroscope.Jerk.Standard.Deviation.Y>> * 14
+> #### Time.Body.Gyroscope.Jerk.Standard.Deviation.Y
 > The Standard Deviation of the jerk signals obtained from the body angular velocity derived in time for the Y axis of the gyroscope.
 >> * -1.00000000000..1.00000000000
 
-> #### Time.Body.Gyroscope.Jerk.Standard.Deviation.Z>> * 14
+> #### Time.Body.Gyroscope.Jerk.Standard.Deviation.Z
 > The Standard Deviation of the jerk signals obtained from the body angular velocity derived in time for the Z axis of the gyroscope.
 >> * -1.00000000000..1.00000000000
 
-> #### Time.Body.Accelerometer.Mag.Mean>> * > 14
+> #### Time.Body.Accelerometer.Mag.Mean
 > The Mean for the magnitude of the body linear acceleration derived in time for the X,Y,Z axis from the accelerometer.
 >> * -1.00000000000..1.00000000000
 
-> #### Time.Body.Accelerometer.Mag.Standard.Deviation>> * 14
+> #### Time.Body.Accelerometer.Mag.Standard.Deviation
 > The Standard Deviation for the magnitude of the body linear acceleration derived in time for the X,Y,Z axis from the accelerometer.
 >> * -1.00000000000..1.00000000000
 
-> #### Time.Gravity.Accelerometer.Mag.Mean>> * > 14
+> #### Time.Gravity.Accelerometer.Mag.Mean
 > The Mean for the magnitude of the gravity acceleration derived in time for the X,Y,Z axis from the accelerometer.
 >> * -1.00000000000..1.00000000000
 
