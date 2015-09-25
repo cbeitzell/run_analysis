@@ -1,9 +1,9 @@
 ### Run analysis
-[Variable Definitions](###Variable Definitions)
-[Transformations](###Transformations)
+[Variable Definitions](#Variable Definitions)
+[Transformations](#Transformations)
 
 <hr>
-###Variable Definitions
+# Variable Definitions
 
 > #### Subject 							2
 >> Test Volunteer subject number
@@ -283,7 +283,7 @@
 >>> * -1.00000000000..1.00000000000
 
 <hr>
-###Transformations
+# Transformations
 <table>
 	<tr>	
 		<td>subject</td>
