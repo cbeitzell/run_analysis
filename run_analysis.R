@@ -2,7 +2,7 @@ library(plyr)
 library(dplyr)
 library(data.table)
 
-runAnalysis <- function() {
+run_analysis <- function() {
         
         setwd("UCI HAR Dataset")
         
@@ -10,7 +10,7 @@ runAnalysis <- function() {
         meanStdList <- featureDef[grepl("^.*mean..$|^.*std..$|^.*mean..-[XYZ]$|^.*std..-[XYZ]$",featureDef$V2, perl = TRUE),]
         
         featureDef$V2 <- gsub("^f","Frequency.",gsub("^t","Time.",gsub("[:():]","",featureDef$V2)))
-        featureDef$V2 <- gsub("std","Standard.Deviation",gsub("mean","Average",gsub("[:():]","",featureDef$V2)))
+        featureDef$V2 <- gsub("std","Standard.Deviation",gsub("mean","Mean",gsub("[:():]","",featureDef$V2)))
         featureDef$V2 <- gsub("Acc",".Accelerometer",featureDef$V2)
         featureDef$V2 <- gsub("Gyro",".Gyroscope",featureDef$V2)
         featureDef$V2 <- gsub("Jerk",".Jerk",featureDef$V2)
