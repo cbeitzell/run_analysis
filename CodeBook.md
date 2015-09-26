@@ -349,8 +349,10 @@
 * write.table(totalDT, file = "RunAnalysis.txt", row.names = FALSE )
 <hr>
 <p></p>
-# Variables
+
 <a name="Variables"/>
+# Variables
+
 <table>
 	<tr>	
 		<td>subject</td>
