@@ -307,9 +307,9 @@
 <p>Transforming the data required the joining of several pieces of data.  Before joining the necessary labels and columns needed to be gained.</p>
 
 <p> read in the raw variable names.</p>
-*featureDef <- read.table("features.txt")
+* featureDef <- read.table("features.txt")
 <p>pull out the coulmns strictly for mean and standard deviation.</p>
-*meanStdList <- featureDef[grepl("^.*mean..$|^.*std..$|^.*mean..-[XYZ]$|^.*std..-[XYZ]$",featureDef$V2, perl = TRUE),]
+* meanStdList <- featureDef[grepl("^.*mean..$|^.*std..$|^.*mean..-[XYZ]$|^.*std..-[XYZ]$",featureDef$V2, perl = TRUE),]
 
 <table>
 	<tr>	
