@@ -1,5 +1,5 @@
 # Run analysis
-<p> Raw data from a test concerning human activity and smartphone recognition was taken and transformed into a tidy data set and placed into a RunAnalsys.txt file.  This code book was created to describe that data set.  It consists of a description of the data, a definition of the variables in the data set, and description of the steps taken to transform the data into a tidy version. </p>
+<p>Data from a test concerning human activity and smartphone recognition was taken and transformed into a tidy data set and placed into a RunAnalysis.txt file.  This code book was created to describe that data set.  It consists of a description of the data, a definition of the variables in the data set, and description of the steps taken to transform the data into a tidy version. </p>
 - [The Data](#The Data)
 - [Variable Definitions](#Variable Definitions)
 - [Transformations](#Transformations)
@@ -7,9 +7,11 @@
 <hr>
 <a name="The Data"/>
 # The Data
-<p> The original experiment was performed on 30 volunteers, and the data collected was from the accelerometers and gyroscopes from the Samsung Galaxy S II smartphone. During the test the volunteers were ask to wear the smartphone on their waste and perform 6 activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) one at a time.</p>
+<p>To understand the data in the analyzation, it good to understand the original data.  The data was gained from an experiment which was performed on 30 volunteers using the Samsung Galaxy S II. During the test the volunteers were ask to wear the smartphone on their waste and perform 6 activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING).  Data was collected from the accelerometers and gyroscopes, capturing 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. From the data 70% was placed into a training set and 30% in to a test set.</p>
 
-<p>TEST</p>
+<p>A further explained method of the data collection. "The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain." (README.txt,http://archive.ics.uci.edu/ml/machine-learning-databases/00341/HAPT Data Set.zip) </p>
+
+<p>A set of raw inertial signal data was compiled from the different sensor signals, and movement.  This raw data was then compiled into a set (both training and testing), normalized and bound.  These sets were taken and manipulated for this analysis. </p>
 
 <hr>
 <a name="Variable Definitions"/>
