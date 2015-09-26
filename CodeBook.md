@@ -348,7 +348,8 @@
 * totalDT <- as.data.table(totalDF)[,lapply(.SD,mean), by=list(Subject,Activity)]
 * write.table(totalDT, file = "RunAnalysis.txt", row.names = FALSE )
 <hr>
-#### Variables
+<p></p>
+# Variables
 <a name="Variables"/>
 <table>
 	<tr>	
