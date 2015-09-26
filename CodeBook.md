@@ -326,7 +326,7 @@
 * testDF <- getData("test",featureDef$V2,activityDef,meanStdList)
 
 <p>The getData function joins the activities list and variable names to the data sets</p>
-*getData <- function(dirTT, colN, actDef, msList) {
+* getData <- function(dirTT, colN, actDef, msList) {
 *        setwd(dirTT)
 <p>Read in the data set and add the variable names to all data. using the read.table function was the easiest method for pulling the data into R.  Fread would have been faster, but speed was not a factor, and fread was causing some issues locally.</p>
 *        X <- read.table(paste(c("X_",dirTT,".txt"), collapse = ""), col.names = colN)
