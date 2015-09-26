@@ -318,7 +318,7 @@
 * featureDef$V2 <- gsub("Jerk",".Jerk",featureDef$V2)
 * featureDef$V2 <- gsub("Mag",".Mag",featureDef$V2)
 <p>see the reference table for a listing of variable transformations.</p>
-- [Variables](#Varibles)
+- [Variables](#Variables)
 <p>next read the list of activity list.</p>
 * activityDef <- read.table("activity_labels.txt")
 <p>With all of the labels gained, the data sets can be created through the use of a getData function.</p>
@@ -347,7 +347,8 @@
 <p>Still this is the full data for every Subject and Activity and needs to be averaged.  To do that the lappy function is used to apply the mean function accross the entire data frame.</p>
 * totalDT <- as.data.table(totalDF)[,lapply(.SD,mean), by=list(Subject,Activity)]
 * write.table(totalDT, file = "RunAnalysis.txt", row.names = FALSE )
-
+<hr>
+#### Variables
 <a name="Variables"/>
 <table>
 	<tr>	
