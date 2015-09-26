@@ -351,17 +351,11 @@
 <p></p>
 
 <a name="Variables"/>
-# Variables
+# Variables Transformation
+
+<p>The variable names needed to be expaneded to really become descritpive. Below is the table of the original variable names and the converetd name.</p>
 
 <table>
-	<tr>	
-		<td>subject</td>
-		<td>Subject</td>
-	</tr>
-	<tr>	
-		<td>activity</td>
-		<td>Activity</td>
-	</tr>
 	<tr>
 		<td>tBodyAcc-mean()-X</td>
 		<td>Time.Body.Accelerometer.Average.X</td>
