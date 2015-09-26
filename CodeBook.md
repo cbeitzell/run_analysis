@@ -1,16 +1,20 @@
-### Run analysis
-<p> This code book describes the data found in the RunAnalys.txt file. </p>
+# Run analysis
+<p> Raw data from a test concerning human activity and smartphone recognition was taken and transformed into a tidy data set and placed into a RunAnalsys.txt file.  This code book was created to describe that data set.  It consists of a description of the data, a definition of the variables in the data set, and description of the steps taken to transform the data into a tidy version. </p>
 - [The Data](#The Data)
 - [Variable Definitions](#Variable Definitions)
 - [Transformations](#Transformations)
 
 <hr>
 <a name="The Data"/>
+# The Data
+<p> The original experiment was performed on 30 volunteers, and the data collected was from the accelerometers and gyroscopes from the Samsung Galaxy S II smartphone. During the test the volunteers were ask to wear the smartphone on their waste and perform 6 activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) one at a time.</p>
+
+<p>TEST</p>
 
 <hr>
 <a name="Variable Definitions"/>
 # Variable Definitions
-
+ 
 > #### Subject 							2
 >> Test Volunteer subject number
 >>> * 1..30 .Unique identifier assigned to test subject
