@@ -342,7 +342,11 @@
 *        returnDF <- cbind(Subject = subject$V1, Activity = joinY$V2, X)
 *        return(returnDF)
 * }
-
+<p>With the new datasets for training and test, the data can be merged into one set and ordered.</p>
+* totalDF <- arrange(rbind(trainDF,testDF), Subject, Activity)
+<p>Still this is the full data for every Subject and Activity and needs to be averaged.  To do that the lappy function is used to apply the mean function accross the entire data frame.</p>
+* totalDT <- as.data.table(totalDF)[,lapply(.SD,mean), by=list(Subject,Activity)]
+* write.table(totalDT, file = "RunAnalysis.txt", row.names = FALSE )
 
 <a name="Variables"/>
 <table>
