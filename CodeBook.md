@@ -306,11 +306,45 @@
 
 <p>Transforming the data required the joining of several pieces of data.  Before joining the necessary labels and columns needed to be gained.</p>
 
-<p> read in the raw variable names.</p>
+<p>Read in the raw variable names.</p>
 * featureDef <- read.table("features.txt")
-<p>pull out the coulmns strictly for mean and standard deviation.</p>
+<p>Pull out the coulmns numbers and names strictly for mean and standard deviation.</p>
 * meanStdList <- featureDef[grepl("^.*mean..$|^.*std..$|^.*mean..-[XYZ]$|^.*std..-[XYZ]$",featureDef$V2, perl = TRUE),]
+<p>Convert the variable names into something more meaningful. To do this a simple replacement of key words was used.</p>
+* featureDef$V2 <- gsub("^f","Frequency.",gsub("^t","Time.",gsub("[:():]","",featureDef$V2)))
+* featureDef$V2 <- gsub("std","Standard.Deviation",gsub("mean","Mean",gsub("[:():]","",featureDef$V2)))
+* featureDef$V2 <- gsub("Acc",".Accelerometer",featureDef$V2)
+* featureDef$V2 <- gsub("Gyro",".Gyroscope",featureDef$V2)
+* featureDef$V2 <- gsub("Jerk",".Jerk",featureDef$V2)
+* featureDef$V2 <- gsub("Mag",".Mag",featureDef$V2)
+<p>see the reference table for a listing of variable transformations.</p>
+- [Variables](#Varibles)
+<p>next read the list of activity list.</p>
+* activityDef <- read.table("activity_labels.txt")
+<p>With all of the labels gained, the data sets can be created through the use of a getData function.</p>
+* trainDF <- getData("train",featureDef$V2,activityDef,meanStdList)
+* testDF <- getData("test",featureDef$V2,activityDef,meanStdList)
 
+<p>The getData function joins the activities list and variable names to the data sets</p>
+*getData <- function(dirTT, colN, actDef, msList) {
+*        setwd(dirTT)
+<p>Read in the data set and add the variable names to all data. using the read.table function was the easiest method for pulling the data into R.  Fread would have been faster, but speed was not a factor, and fread was causing some issues locally.</p>
+*        X <- read.table(paste(c("X_",dirTT,".txt"), collapse = ""), col.names = colN)
+<p>Read in the activity list for that dataset and translate it to a descriptive name.</p>
+*        y <- read.table(paste(c("y_",dirTT,".txt"), collapse = ""))
+*        joinY <- join(y,actDef)
+<p>Read in the subject list for that data set</p>
+*        subject <- read.table(paste(c("subject_",dirTT,".txt"), collapse = ""))
+*        setwd("..")
+<p>Pull out the mean and std variables from the dataset.</p>
+        X <- select(X,msList$V1)
+<p>Finally create the new mini tidy data set and return it.
+*        returnDF <- cbind(Subject = subject$V1, Activity = joinY$V2, X)
+*        return(returnDF)
+* }
+
+
+<a name="Variables"/>
 <table>
 	<tr>	
 		<td>subject</td>
