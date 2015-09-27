@@ -1,23 +1,32 @@
 # Run analysis
-<p>Data from a test concerning human activity and smartphone recognition was taken and transformed into a tidy data set and placed into a RunAnalysis.txt file.  This code book was created to describe that data set.  It consists of a description of the data, a definition of the variables in the data set, and description of the steps taken to transform the data into a tidy version. </p>
+<p>This code book is for a tidy data set located in RunAnalysis.txt, which was created from the Human Activity Recognition Using Smartphones test. (http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) The data from the original test was derived by measuring activies using smartphones. This code book will describe the averaging of the mean and standard deviation variables of the original data set.  It consists of a description of the data, a definition of the variables in the new data set, and a description of the steps taken to transform the data into a tidy version. </p>
 - [The Data](#The Data)
-- [Variable Definitions](#Variable Definitions)
-- [Transformations](#Transformations)
+- [Code book](#Code book)
+- [Study design](#Study design)
 
 <hr>
 <a name="The Data"/>
 # The Data
-<p>To understand the data in the analyzation, it good to understand the original data.  The data was gained from an experiment which was performed on 30 volunteers using the Samsung Galaxy S II. During the test the volunteers were ask to wear the smartphone on their waste and perform 6 activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING).  Data was collected from the accelerometers and gyroscopes, capturing 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. From the data 70% was placed into a training set and 30% in to a test set.</p>
+<p>The original data was gained from an experiment consiting of 30 volunteers using the Samsung Galaxy S II. During the test the volunteers were ask to wear the smartphone on their waste and perform 6 activities (WALKING, WALKING UPSTAIRS, WALKING DOWNSTAIRS, SITTING, STANDING, LAYING).  Data was collected from the accelerometers and gyroscopes, capturing the 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. From the data 70% were placed into a training set and 30% in to a test set.</p>
 
 <p>A further explained method of the data collection. "The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain." (README.txt,http://archive.ics.uci.edu/ml/machine-learning-databases/00341/HAPT Data Set.zip) </p>
 
-<p>A set of raw inertial signal data was compiled from the different sensor signals, and movement.  This raw data was then compiled into a set (both training and testing), normalized and bound. From these sets the mean and standard deviation variables were taken and then averaged by subject and activity. The frequency mean was not included as one of the mean variables as is a measurement used to find the mean of a frequency. The other mean variables dealt with the mean of the particular sensor signal meansurement in question.</p>
+<p>A set of raw inertial signal data was compiled from the different sensor signals, and movement.  "The unitsused for the "accelerations (total and body) are 'g's (gravity of earth -> 9.80665 m/seg2). The gyroscope units are rad/seg." (Notes, http://archive.ics.uci.edu/ml/datasets/Smartphone-Based+Recognition+of+Human+Activities+and+Postural+Transitions#)  The data in the inertial data sets was then compiled into the train and test sets.  The values in those set files are the normalized and bounded values of the interial data into a -1 to 1 range.</p>
 
-<p>The data is in wide format.  It is order by the Subject, and then Activity.  The Averaged mean and standard deviation variables then follow.</p>
+<p>To create the tidy data in RunAnalysis.txt, the mean and standard deviation variables extracted from the two sets.  The sets were then correlated to the subject id and activity for that vector of data. The two sets were joined and the average for each variable by subject and activity was measured.</p>
+* NOTE: The frequency mean was not included as one of the mean variables as is a measurement used to find the mean of a frequency. The other mean variables dealt with the mean of the particular sensor signal meansurement in question.
+
+<p>The data is in wide format, consisting of 181 rows (the first row is the header) and 68 columns.  It is order by the Subject, and then Activity columns.  The Averaged mean and standard deviation variables then follow.  This data set follows the tidy data princples:</p>
+1. Each variable is in a column.
+2. Every row is for a different observation, I.e. the the subject and activity combination is unique.
+3. There is one table for the overall averaging of the data set.
+4. The first row of the RunAnalysis.txt is the list of variable names.
+5. The variable names have been converted from the experiment code names to something more readable.
+	* tBodyAcc-mean()-X to Time.Body.Accelerometer.Average.X
 
 <hr>
-<a name="Variable Definitions"/>
-# Variable Definitions
+<a name="Code book"/>
+# Code book
 <p>The variable definitions are formatted as such:</p>
 > #### Variable Name   (number of characters in value)
 >> Definition of the variable
@@ -301,8 +310,8 @@
 >>> * -1.00000000000 .. 1.00000000000
 
 <hr>
-<a name="Transformations"/>
-# Transformations
+<a name="Study design"/>
+# Study design
 
 <p>Transforming the data required the joining of several pieces of data.  Before joining the necessary labels and columns needed to be gained.</p>
 
