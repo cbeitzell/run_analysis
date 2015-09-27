@@ -47,269 +47,269 @@ Variable Name   (number of characters in each variable)
     * STANDING
     * LAYING
 
-> #### Time.Body.Accelerometer.Mean.X (14)
->> The Mean of the body linear acceleration derived in time for the X axis from the accelerometer.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Time.Body.Accelerometer.Mean.Y (14)
->> The Mean of the body linear acceleration derived in time for the Y axis from the accelerometer.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Time.Body.Accelerometer.Mean.Z (14)
->> The Mean of the body linear acceleration derived in time for the X axis from the accelerometer.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Time.Body.Accelerometer.Standard.Deviation.X (14)
->> The Standard Deviation of the body linear acceleration derived in time for the X axis from the accelerometer.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Time.Body.Accelerometer.Standard.Deviation.Y (14)
->> The Standard Deviation of the body linear acceleration derived in time for the Y axis from the accelerometer.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Time.Body.Accelerometer.Standard.Deviation.Z (14)
->> The Standard Deviation of the body linear acceleration derived in time for the Z axis from the accelerometer.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Time.Gravity.Accelerometer.Mean.X (14)
->> The Mean of the gravity acceleration derived in time for the X axis from the accelerometer.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Time.Gravity.Accelerometer.Mean.Y (14)
->> The Mean of the gravity acceleration derived in time for the Y axis from the accelerometer.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Time.Gravity.Accelerometer.Mean.Z (14)
->> The Mean of the gravity acceleration derived in time for the Z axis from the accelerometer.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Time.Gravity.Accelerometer.Standard.Deviation.X (14)
->> The Standard Deviation of the gravity acceleration derived in time for the X axis from the accelerometer.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Time.Gravity.Accelerometer.Standard.Deviation.Y (14)
->> The Standard Deviation of the gravity acceleration derived in time for the Y axis from the accelerometer.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Time.Gravity.Accelerometer.Standard.Deviation.Z (14)
->> The Standard Deviation of the gravity acceleration derived in time for the Z axis from the accelerometer.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Time.Body.Accelerometer.Jerk.Mean.X (14)
->> The Mean of the jerk signals obtained from the body linear acceleration derived in time for the X axis of the accelerometer.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Time.Body.Accelerometer.Jerk.Mean.Y (14)
->> The Mean of the jerk signals obtained from the body linear acceleration derived in time for the Y axis of the accelerometer.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Time.Body.Accelerometer.Jerk.Mean.Z (14)
->> The Mean of the jerk signals obtained from the body linear acceleration derived in time for the Z axis of the accelerometer.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Time.Body.Accelerometer.Jerk.Standard.Deviation.X (14)
->> The Standard Deviation of the jerk signals obtained from the body linear acceleration derived in time for the X axis of the accelerometer.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Time.Body.Accelerometer.Jerk.Standard.Deviation.Y (14)
->> The Standard Deviation of the jerk signals obtained from the body linear acceleration derived in time for the Y axis of the accelerometer.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Time.Body.Accelerometer.Jerk.Standard.Deviation.Z (14)
->> The Standard Deviation of the jerk signals obtained from the body linear acceleration derived in time for the Z axis of the accelerometer.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Time.Body.Gyroscope.Mean.X (14)
->> The Mean of the body angular velocity derived in time for the X axis from the gyroscope.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Time.Body.Gyroscope.Mean.Y (14)
->> The Mean of the body angular velocity derived in time for the Y axis from the gyroscope.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Time.Body.Gyroscope.Mean.Z (14)
->> The Mean of the body angular velocity derived in time for the Z axis from the gyroscope.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Time.Body.Gyroscope.Standard.Deviation.X (14)
->> The Standard Deviation of the body angular velocity derived in time for the X axis from the gyroscope.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Time.Body.Gyroscope.Standard.Deviation.Y (14)
->> The Standard Deviation of the body angular velocity derived in time for the Y axis from the gyroscope.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Time.Body.Gyroscope.Standard.Deviation.Z (14)
->> The Standard Deviation of the body angular velocity derived in time for the Z axis from the gyroscope.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Time.Body.Gyroscope.Jerk.Mean.X (14)
->> The Mean of the jerk signals obtained from the body angular velocity derived in time for the X axis of the gyroscope.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Time.Body.Gyroscope.Jerk.Mean.Y (14)
->> The Mean of the jerk signals obtained from the body angular velocity derived in time for the Y axis of the gyroscope.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Time.Body.Gyroscope.Jerk.Mean.Z (14)
->> The Mean of the jerk signals obtained from the body angular velocity derived in time for the Z axis of the gyroscope.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Time.Body.Gyroscope.Jerk.Standard.Deviation.X (14)
->> The Standard Deviation of the jerk signals obtained from the body angular velocity derived in time for the X axis of the gyroscope.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Time.Body.Gyroscope.Jerk.Standard.Deviation.Y (14)
->> The Standard Deviation of the jerk signals obtained from the body angular velocity derived in time for the Y axis of the gyroscope.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Time.Body.Gyroscope.Jerk.Standard.Deviation.Z (14)
->> The Standard Deviation of the jerk signals obtained from the body angular velocity derived in time for the Z axis of the gyroscope.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Time.Body.Accelerometer.Mag.Mean (14)
->> The Mean for the magnitude of the body linear acceleration derived in time for the X,Y,Z axis from the accelerometer.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Time.Body.Accelerometer.Mag.Standard.Deviation (14)
->> The Standard Deviation for the magnitude of the body linear acceleration derived in time for the X,Y,Z axis from the accelerometer.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Time.Gravity.Accelerometer.Mag.Mean (14)
->> The Mean for the magnitude of the gravity acceleration derived in time for the X,Y,Z axis from the accelerometer.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Time.Gravity.Accelerometer.Mag.Standard.Deviation (14)
->> The Standard Deviation for the magnitude of the gravity acceleration derived in time from the accelerometer.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Time.Body.Accelerometer.Jerk.Mag.Mean (14)
->> The Mean for the magnitude of the jerk signals obtained from the body linear acceleration derived in time from the accelerometer.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Time.Body.Accelerometer.Jerk.Mag.Standard.Deviation (14)
->> The Standard Deviation for the magnitude of the jerk signals obtained from the body linear acceleration derived in time from the accelerometer.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Time.Body.Gyroscope.Mag.Mean (14)
->> The Mean for the magnitude obtained from the body angular velocity derived in time from the gyroscope.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Time.Body.Gyroscope.Mag.Standard.Deviation (14)
->> The Standard Deviation for the magnitude obtained from the body angular velocity derived in time from the gyroscope.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Time.Body.Gyroscope.Jerk.Mag.Mean (14)
->> The Mean for the magnitude of the jerk signals obtained from the body angular velocity derived in time from the gyroscope.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Time.Body.Gyroscope.Jerk.Mag.Standard.Deviation (14)
->> The Standard Deviation for the magnitude of the jerk signals obtained from the body angular velocity derived in time from the gyroscope.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Frequency.Body.Accelerometer.Mean.X (14)
->> Fast Fourier Transform applied to the Mean of the body linear acceleration derived in time for the X axis from the accelerometer.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Frequency.Body.Accelerometer.Mean.Y (14)
->> Fast Fourier Transform applied to the Mean of the body linear acceleration derived in time for the Y axis from the accelerometer.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Frequency.Body.Accelerometer.Mean.Z (14)
->> Fast Fourier Transform applied to the Mean of the body linear acceleration derived in time for the X axis from the accelerometer.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Frequency.Body.Accelerometer.Standard.Deviation.X (14)
->> Fast Fourier Transform applied to the Standard Deviation of the body linear acceleration derived in time for the X axis from the accelerometer.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Frequency.Body.Accelerometer.Standard.Deviation.Y (14)
->> Fast Fourier Transform applied to the Standard Deviation of the body linear acceleration derived in time for the Y axis from the accelerometer.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Frequency.Body.Accelerometer.Standard.Deviation.Z (14)
->> Fast Fourier Transform applied to the Standard Deviation of the body linear acceleration derived in time for the Z axis from the accelerometer.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Frequency.Body.Accelerometer.Jerk.Mean.X (14)
->> Fast Fourier Transform applied to the Mean of the jerk signals obtained from the body linear acceleration derived in time for the X axis of the accelerometer.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Frequency.Body.Accelerometer.Jerk.Mean.Y (14)
->> Fast Fourier Transform applied to the Mean of the jerk signals obtained from the body linear acceleration derived in time for the Y axis of the accelerometer.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Frequency.Body.Accelerometer.Jerk.Mean.Z (14)
->> Fast Fourier Transform applied to the Mean of the jerk signals obtained from the body linear acceleration derived in time for the Z axis of the accelerometer.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Frequency.Body.Accelerometer.Jerk.Standard.Deviation.X (14)
->> Fast Fourier Transform applied to the Standard Deviation of the jerk signals obtained from the body linear acceleration derived in time for the X axis of the accelerometer.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Frequency.Body.Accelerometer.Jerk.Standard.Deviation.Y (14)
->> Fast Fourier Transform applied to the Standard Deviation of the jerk signals obtained from the body linear acceleration derived in time for the Y axis of the accelerometer.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Frequency.Body.Accelerometer.Jerk.Standard.Deviation.Z (14)
->> Fast Fourier Transform applied to the Standard Deviation of the jerk signals obtained from the body linear acceleration derived in time for the Z axis of the accelerometer.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Frequency.Body.Gyroscope.Mean.X (14)
->> Fast Fourier Transform applied to the Mean of the body angular velocity derived in time for the X axis from the gyroscope.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Frequency.Body.Gyroscope.Mean.Y (14)
->> Fast Fourier Transform applied to the Mean of the body angular velocity derived in time for the Y axis from the gyroscope.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Frequency.Body.Gyroscope.Mean.Z (14)
->> Fast Fourier Transform applied to the Mean of the body angular velocity derived in time for the Z axis from the gyroscope.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Frequency.Body.Gyroscope.Standard.Deviation.X (14)
->> Fast Fourier Transform applied to the Standard Deviation of the body angular velocity derived in time for the X axis from the gyroscope.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Frequency.Body.Gyroscope.Standard.Deviation.Y (14)
->> Fast Fourier Transform applied to the Standard Deviation of the body angular velocity derived in time for the Y axis from the gyroscope.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Frequency.Body.Gyroscope.Standard.Deviation.Z (14)
->> Fast Fourier Transform applied to the Standard Deviation of the body angular velocity derived in time for the Z axis from the gyroscope.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Frequency.Body.Accelerometer.Mag.Mean (14)
->> Fast Fourier Transform applied to the Mean for the magnitude of the body linear acceleration derived in time for the X,Y,Z axis from the accelerometer.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Frequency.Body.Accelerometer.Mag.Standard.Deviation (14)
->> Fast Fourier Transform applied to the Standard Deviation for the magnitude of the body linear acceleration derived in time for the X,Y,Z axis from the accelerometer.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Frequency.BodyBody.Accelerometer.Jerk.Mag.Mean (14)
->> Fast Fourier Transform applied to the Mean for the magnitude of the jerk signals obtained from the body linear acceleration derived in time from the accelerometer.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Frequency.BodyBody.Accelerometer.Jerk.Mag.Standard.Deviation (14)
->> Fast Fourier Transform applied to the Standard Deviation for the magnitude of the jerk signals obtained from the body linear acceleration derived in time from the accelerometer.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Frequency.BodyBody.Gyroscope.Mag.Mean (14)
->> Fast Fourier Transform applied to the Mean for the magnitude obtained from the body angular velocity derived in time from the gyroscope.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Frequency.BodyBody.Gyroscope.Mag.Standard.Deviation (14)
->> Fast Fourier Transform applied to the Standard Deviation for the magnitude obtained from the body angular velocity derived in time from the gyroscope.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Frequency.BodyBody.Gyroscope.Jerk.Mag.Mean (14)
->> Fast Fourier Transform applied to the Mean for the magnitude of the jerk signals obtained from the body angular velocity derived in time from the gyroscope.
->>> * -1.00000000000 .. 1.00000000000
-
-> #### Frequency.BodyBody.Gyroscope.Jerk.Mag.Standard.Deviation (14)
->> Fast Fourier Transform applied to the Standard Deviation for the magnitude of the jerk signals obtained from the body angular velocity derived in time from the gyroscope.
->>> * -1.00000000000 .. 1.00000000000
+3. Time.Body.Accelerometer.Mean.X (14)
+  * The Mean of the body linear acceleration derived in time for the X axis from the accelerometer.
+    * -1.00000000000 .. 1.00000000000
+
+4. Time.Body.Accelerometer.Mean.Y (14)
+  * The Mean of the body linear acceleration derived in time for the Y axis from the accelerometer.
+    * -1.00000000000 .. 1.00000000000
+
+5. Time.Body.Accelerometer.Mean.Z (14)
+  * The Mean of the body linear acceleration derived in time for the X axis from the accelerometer.
+    * -1.00000000000 .. 1.00000000000
+
+6. Time.Body.Accelerometer.Standard.Deviation.X (14)
+  * The Standard Deviation of the body linear acceleration derived in time for the X axis from the accelerometer.
+    * -1.00000000000 .. 1.00000000000
+
+7. Time.Body.Accelerometer.Standard.Deviation.Y (14)
+  * The Standard Deviation of the body linear acceleration derived in time for the Y axis from the accelerometer.
+    * -1.00000000000 .. 1.00000000000
+
+8. Time.Body.Accelerometer.Standard.Deviation.Z (14)
+  * The Standard Deviation of the body linear acceleration derived in time for the Z axis from the accelerometer.
+    * -1.00000000000 .. 1.00000000000
+
+9. Time.Gravity.Accelerometer.Mean.X (14)
+  * The Mean of the gravity acceleration derived in time for the X axis from the accelerometer.
+    * -1.00000000000 .. 1.00000000000
+
+10. Time.Gravity.Accelerometer.Mean.Y (14)
+  * The Mean of the gravity acceleration derived in time for the Y axis from the accelerometer.
+    * -1.00000000000 .. 1.00000000000
+
+11. Time.Gravity.Accelerometer.Mean.Z (14)
+  * The Mean of the gravity acceleration derived in time for the Z axis from the accelerometer.
+    * -1.00000000000 .. 1.00000000000
+
+12. Time.Gravity.Accelerometer.Standard.Deviation.X (14)
+  * The Standard Deviation of the gravity acceleration derived in time for the X axis from the accelerometer.
+    * -1.00000000000 .. 1.00000000000
+
+13. Time.Gravity.Accelerometer.Standard.Deviation.Y (14)
+  * The Standard Deviation of the gravity acceleration derived in time for the Y axis from the accelerometer.
+    * -1.00000000000 .. 1.00000000000
+
+14. Time.Gravity.Accelerometer.Standard.Deviation.Z (14)
+  * The Standard Deviation of the gravity acceleration derived in time for the Z axis from the accelerometer.
+    * -1.00000000000 .. 1.00000000000
+
+15. Time.Body.Accelerometer.Jerk.Mean.X (14)
+  * The Mean of the jerk signals obtained from the body linear acceleration derived in time for the X axis of the accelerometer.
+    * -1.00000000000 .. 1.00000000000
+
+16. Time.Body.Accelerometer.Jerk.Mean.Y (14)
+  * The Mean of the jerk signals obtained from the body linear acceleration derived in time for the Y axis of the accelerometer.
+    * -1.00000000000 .. 1.00000000000
+
+17. Time.Body.Accelerometer.Jerk.Mean.Z (14)
+  * The Mean of the jerk signals obtained from the body linear acceleration derived in time for the Z axis of the accelerometer.
+    * -1.00000000000 .. 1.00000000000
+
+18. Time.Body.Accelerometer.Jerk.Standard.Deviation.X (14)
+  * The Standard Deviation of the jerk signals obtained from the body linear acceleration derived in time for the X axis of the accelerometer.
+    * -1.00000000000 .. 1.00000000000
+
+19. Time.Body.Accelerometer.Jerk.Standard.Deviation.Y (14)
+  * The Standard Deviation of the jerk signals obtained from the body linear acceleration derived in time for the Y axis of the accelerometer.
+    * -1.00000000000 .. 1.00000000000
+
+20. Time.Body.Accelerometer.Jerk.Standard.Deviation.Z (14)
+  * The Standard Deviation of the jerk signals obtained from the body linear acceleration derived in time for the Z axis of the accelerometer.
+    * -1.00000000000 .. 1.00000000000
+
+21. Time.Body.Gyroscope.Mean.X (14)
+  * The Mean of the body angular velocity derived in time for the X axis from the gyroscope.
+    * -1.00000000000 .. 1.00000000000
+
+22. Time.Body.Gyroscope.Mean.Y (14)
+  * The Mean of the body angular velocity derived in time for the Y axis from the gyroscope.
+    * -1.00000000000 .. 1.00000000000
+
+23. Time.Body.Gyroscope.Mean.Z (14)
+  * The Mean of the body angular velocity derived in time for the Z axis from the gyroscope.
+    * -1.00000000000 .. 1.00000000000
+
+24. Time.Body.Gyroscope.Standard.Deviation.X (14)
+  * The Standard Deviation of the body angular velocity derived in time for the X axis from the gyroscope.
+    * -1.00000000000 .. 1.00000000000
+
+25. Time.Body.Gyroscope.Standard.Deviation.Y (14)
+  * The Standard Deviation of the body angular velocity derived in time for the Y axis from the gyroscope.
+    * -1.00000000000 .. 1.00000000000
+
+26. Time.Body.Gyroscope.Standard.Deviation.Z (14)
+  * The Standard Deviation of the body angular velocity derived in time for the Z axis from the gyroscope.
+    * -1.00000000000 .. 1.00000000000
+
+27. Time.Body.Gyroscope.Jerk.Mean.X (14)
+  * The Mean of the jerk signals obtained from the body angular velocity derived in time for the X axis of the gyroscope.
+    * -1.00000000000 .. 1.00000000000
+
+28. Time.Body.Gyroscope.Jerk.Mean.Y (14)
+  * The Mean of the jerk signals obtained from the body angular velocity derived in time for the Y axis of the gyroscope.
+    * -1.00000000000 .. 1.00000000000
+
+29. Time.Body.Gyroscope.Jerk.Mean.Z (14)
+  * The Mean of the jerk signals obtained from the body angular velocity derived in time for the Z axis of the gyroscope.
+    * -1.00000000000 .. 1.00000000000
+
+30. Time.Body.Gyroscope.Jerk.Standard.Deviation.X (14)
+  * The Standard Deviation of the jerk signals obtained from the body angular velocity derived in time for the X axis of the gyroscope.
+    * -1.00000000000 .. 1.00000000000
+
+31. Time.Body.Gyroscope.Jerk.Standard.Deviation.Y (14)
+  * The Standard Deviation of the jerk signals obtained from the body angular velocity derived in time for the Y axis of the gyroscope.
+    * -1.00000000000 .. 1.00000000000
+
+32. Time.Body.Gyroscope.Jerk.Standard.Deviation.Z (14)
+  * The Standard Deviation of the jerk signals obtained from the body angular velocity derived in time for the Z axis of the gyroscope.
+    * -1.00000000000 .. 1.00000000000
+
+33. Time.Body.Accelerometer.Mag.Mean (14)
+  * The Mean for the magnitude of the body linear acceleration derived in time for the X,Y,Z axis from the accelerometer.
+    * -1.00000000000 .. 1.00000000000
+
+34. Time.Body.Accelerometer.Mag.Standard.Deviation (14)
+  * The Standard Deviation for the magnitude of the body linear acceleration derived in time for the X,Y,Z axis from the accelerometer.
+    * -1.00000000000 .. 1.00000000000
+
+35. Time.Gravity.Accelerometer.Mag.Mean (14)
+  * The Mean for the magnitude of the gravity acceleration derived in time for the X,Y,Z axis from the accelerometer.
+    * -1.00000000000 .. 1.00000000000
+
+36. Time.Gravity.Accelerometer.Mag.Standard.Deviation (14)
+  * The Standard Deviation for the magnitude of the gravity acceleration derived in time from the accelerometer.
+    * -1.00000000000 .. 1.00000000000
+
+37. Time.Body.Accelerometer.Jerk.Mag.Mean (14)
+  * The Mean for the magnitude of the jerk signals obtained from the body linear acceleration derived in time from the accelerometer.
+    * -1.00000000000 .. 1.00000000000
+
+38. Time.Body.Accelerometer.Jerk.Mag.Standard.Deviation (14)
+  * The Standard Deviation for the magnitude of the jerk signals obtained from the body linear acceleration derived in time from the accelerometer.
+    * -1.00000000000 .. 1.00000000000
+
+39. Time.Body.Gyroscope.Mag.Mean (14)
+  * The Mean for the magnitude obtained from the body angular velocity derived in time from the gyroscope.
+    * -1.00000000000 .. 1.00000000000
+
+40. Time.Body.Gyroscope.Mag.Standard.Deviation (14)
+  * The Standard Deviation for the magnitude obtained from the body angular velocity derived in time from the gyroscope.
+    * -1.00000000000 .. 1.00000000000
+
+41. Time.Body.Gyroscope.Jerk.Mag.Mean (14)
+  * The Mean for the magnitude of the jerk signals obtained from the body angular velocity derived in time from the gyroscope.
+    * -1.00000000000 .. 1.00000000000
+
+42. Time.Body.Gyroscope.Jerk.Mag.Standard.Deviation (14)
+  * The Standard Deviation for the magnitude of the jerk signals obtained from the body angular velocity derived in time from the gyroscope.
+    * -1.00000000000 .. 1.00000000000
+
+43. Frequency.Body.Accelerometer.Mean.X (14)
+  * Fast Fourier Transform applied to the Mean of the body linear acceleration derived in time for the X axis from the accelerometer.
+    * -1.00000000000 .. 1.00000000000
+
+44. Frequency.Body.Accelerometer.Mean.Y (14)
+  * Fast Fourier Transform applied to the Mean of the body linear acceleration derived in time for the Y axis from the accelerometer.
+    * -1.00000000000 .. 1.00000000000
+
+45. Frequency.Body.Accelerometer.Mean.Z (14)
+  * Fast Fourier Transform applied to the Mean of the body linear acceleration derived in time for the X axis from the accelerometer.
+    * -1.00000000000 .. 1.00000000000
+
+46. Frequency.Body.Accelerometer.Standard.Deviation.X (14)
+  * Fast Fourier Transform applied to the Standard Deviation of the body linear acceleration derived in time for the X axis from the accelerometer.
+    * -1.00000000000 .. 1.00000000000
+
+47. Frequency.Body.Accelerometer.Standard.Deviation.Y (14)
+  * Fast Fourier Transform applied to the Standard Deviation of the body linear acceleration derived in time for the Y axis from the accelerometer.
+    * -1.00000000000 .. 1.00000000000
+
+48. Frequency.Body.Accelerometer.Standard.Deviation.Z (14)
+  * Fast Fourier Transform applied to the Standard Deviation of the body linear acceleration derived in time for the Z axis from the accelerometer.
+    * -1.00000000000 .. 1.00000000000
+
+49. Frequency.Body.Accelerometer.Jerk.Mean.X (14)
+  * Fast Fourier Transform applied to the Mean of the jerk signals obtained from the body linear acceleration derived in time for the X axis of the accelerometer.
+    * -1.00000000000 .. 1.00000000000
+
+50. Frequency.Body.Accelerometer.Jerk.Mean.Y (14)
+  * Fast Fourier Transform applied to the Mean of the jerk signals obtained from the body linear acceleration derived in time for the Y axis of the accelerometer.
+    * -1.00000000000 .. 1.00000000000
+
+51. Frequency.Body.Accelerometer.Jerk.Mean.Z (14)
+  * Fast Fourier Transform applied to the Mean of the jerk signals obtained from the body linear acceleration derived in time for the Z axis of the accelerometer.
+    * -1.00000000000 .. 1.00000000000
+
+52. Frequency.Body.Accelerometer.Jerk.Standard.Deviation.X (14)
+  * Fast Fourier Transform applied to the Standard Deviation of the jerk signals obtained from the body linear acceleration derived in time for the X axis of the accelerometer.
+    * -1.00000000000 .. 1.00000000000
+
+53. Frequency.Body.Accelerometer.Jerk.Standard.Deviation.Y (14)
+  * Fast Fourier Transform applied to the Standard Deviation of the jerk signals obtained from the body linear acceleration derived in time for the Y axis of the accelerometer.
+    * -1.00000000000 .. 1.00000000000
+
+54. Frequency.Body.Accelerometer.Jerk.Standard.Deviation.Z (14)
+  * Fast Fourier Transform applied to the Standard Deviation of the jerk signals obtained from the body linear acceleration derived in time for the Z axis of the accelerometer.
+    * -1.00000000000 .. 1.00000000000
+
+55. Frequency.Body.Gyroscope.Mean.X (14)
+  * Fast Fourier Transform applied to the Mean of the body angular velocity derived in time for the X axis from the gyroscope.
+    * -1.00000000000 .. 1.00000000000
+
+56. Frequency.Body.Gyroscope.Mean.Y (14)
+  * Fast Fourier Transform applied to the Mean of the body angular velocity derived in time for the Y axis from the gyroscope.
+    * -1.00000000000 .. 1.00000000000
+
+57. Frequency.Body.Gyroscope.Mean.Z (14)
+  * Fast Fourier Transform applied to the Mean of the body angular velocity derived in time for the Z axis from the gyroscope.
+    * -1.00000000000 .. 1.00000000000
+
+58. Frequency.Body.Gyroscope.Standard.Deviation.X (14)
+  * Fast Fourier Transform applied to the Standard Deviation of the body angular velocity derived in time for the X axis from the gyroscope.
+    * -1.00000000000 .. 1.00000000000
+
+59. Frequency.Body.Gyroscope.Standard.Deviation.Y (14)
+  * Fast Fourier Transform applied to the Standard Deviation of the body angular velocity derived in time for the Y axis from the gyroscope.
+    * -1.00000000000 .. 1.00000000000
+
+60. Frequency.Body.Gyroscope.Standard.Deviation.Z (14)
+  * Fast Fourier Transform applied to the Standard Deviation of the body angular velocity derived in time for the Z axis from the gyroscope.
+    * -1.00000000000 .. 1.00000000000
+
+61. Frequency.Body.Accelerometer.Mag.Mean (14)
+  * Fast Fourier Transform applied to the Mean for the magnitude of the body linear acceleration derived in time for the X,Y,Z axis from the accelerometer.
+    * -1.00000000000 .. 1.00000000000
+
+62. Frequency.Body.Accelerometer.Mag.Standard.Deviation (14)
+  * Fast Fourier Transform applied to the Standard Deviation for the magnitude of the body linear acceleration derived in time for the X,Y,Z axis from the accelerometer.
+    * -1.00000000000 .. 1.00000000000
+
+63. Frequency.BodyBody.Accelerometer.Jerk.Mag.Mean (14)
+  * Fast Fourier Transform applied to the Mean for the magnitude of the jerk signals obtained from the body linear acceleration derived in time from the accelerometer.
+    * -1.00000000000 .. 1.00000000000
+
+64. Frequency.BodyBody.Accelerometer.Jerk.Mag.Standard.Deviation (14)
+  * Fast Fourier Transform applied to the Standard Deviation for the magnitude of the jerk signals obtained from the body linear acceleration derived in time from the accelerometer.
+    * -1.00000000000 .. 1.00000000000
+
+65. Frequency.BodyBody.Gyroscope.Mag.Mean (14)
+  * Fast Fourier Transform applied to the Mean for the magnitude obtained from the body angular velocity derived in time from the gyroscope.
+    * -1.00000000000 .. 1.00000000000
+
+66. Frequency.BodyBody.Gyroscope.Mag.Standard.Deviation (14)
+  * Fast Fourier Transform applied to the Standard Deviation for the magnitude obtained from the body angular velocity derived in time from the gyroscope.
+    * -1.00000000000 .. 1.00000000000
+
+67. Frequency.BodyBody.Gyroscope.Jerk.Mag.Mean (14)
+  * Fast Fourier Transform applied to the Mean for the magnitude of the jerk signals obtained from the body angular velocity derived in time from the gyroscope.
+    * -1.00000000000 .. 1.00000000000
+
+68. Frequency.BodyBody.Gyroscope.Jerk.Mag.Standard.Deviation (14)
+  * Fast Fourier Transform applied to the Standard Deviation for the magnitude of the jerk signals obtained from the body angular velocity derived in time from the gyroscope.
+    * -1.00000000000 .. 1.00000000000
 
 <hr>
 <a name="Study design"/>
