@@ -32,9 +32,9 @@
 *Definition of the variable
   *value and meaning of the variable
  
-> #### Subject (2) 						
->> Test Volunteer subject number
->>> * 1..30 .Unique identifier assigned to test subject
+1. Subject (2) 						
+* Test Volunteer subject number
+  * 1..30 .Unique identifier assigned to test subject
 
 > #### Activity	(18)
 >> Activity performed during tests
