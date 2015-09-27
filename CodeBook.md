@@ -29,8 +29,8 @@
 # Code book
 <p>The variable definitions are formatted as such:</p>
 #### Variable Name   (number of characters in value)
-*Definition of the variable
-  *value and meaning of the variable
+  *Definition of the variable
+    *value and meaning of the variable
  
 1. Subject (2) 						
   * Test Volunteer subject number
