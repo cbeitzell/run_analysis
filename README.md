@@ -29,7 +29,20 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 * UCI HAR Dataset/test/X_test.txt - contains the normalized data set from the experiment.
 * UCI HAR Dataset/test/y_test.txt - contains the activity reference number for each vector in X_test.txt
 
-<p>The run_analysis function first changes the directory to "UCI HAR Dataset".  It the reads in the features.txt file, which contains the listing of column vector and raw variable descriptions.</p>
+<p>The run_analysis function first changes the directory to "UCI HAR Dataset", if needed.  The script should be run from the UCI HAR Dataset" directory or the directory above it.</p>
+
+```
+        if (!(identical(basename(getwd()),"UCI HAR Dataset"))) {
+                if (length(list.files(".",pattern = "^UCI HAR Dataset$")) > 0) {
+                        setwd("UCI HAR Dataset")
+                } else {
+                        stop("The run_analysis function must be run from the \"UCI HAR Dataset\" directory or the directory above it.")
+                }             
+        }
+```
+
+
+<o>It the reads in the features.txt file, which contains the listing of column vector and raw variable descriptions.</p>
 ```
 featureDef <- read.table("features.txt")
 ```

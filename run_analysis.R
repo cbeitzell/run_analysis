@@ -6,8 +6,16 @@ library(data.table)
 # Smart phone activity recognition test, and return an averaged tidy data set.
 run_analysis <- function() {
         
-        # change directory to the data set directory.
-        setwd("UCI HAR Dataset")
+        # change directory to the data set directory if needed.
+        
+        if (!(identical(basename(getwd()),"UCI HAR Dataset"))) {
+                if (length(list.files(".",pattern = "^UCI HAR Dataset$")) > 0) {
+                        setwd("UCI HAR Dataset")
+                } else {
+                        stop("The run_analysis function must be run from the \"UCI HAR Dataset\" directory or the directory above it.")
+                }             
+        }
+        
         
         # read in the features file to gain the raw variable names
         featureDef <- read.table("features.txt")
