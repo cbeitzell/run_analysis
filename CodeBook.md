@@ -1,4 +1,4 @@
-# Run analysis
+# Run Analysis
 <p>This code book is for a tidy data set located in RunAnalysis.txt, which was created from the Human Activity Recognition Using Smartphones test. (http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) The data from the original test was derived by measuring activies using smartphones. This code book will describe the averaging of the mean and standard deviation variables of the original data set.  It consists of a description of the data, a definition of the variables in the new data set, and a description of the steps taken to transform the data into a tidy version. </p>
 - [The Data](#The Data)
 - [Code book](#Code book)
@@ -16,7 +16,7 @@
 <p>To create the tidy data in RunAnalysis.txt, the mean and standard deviation variables extracted from the two sets.  The sets were then correlated to the subject id and activity for that vector of data. The two sets were joined and the average for each variable by subject and activity was measured.</p>
 * NOTE: The frequency mean was not included as one of the mean variables as is a measurement used to find the mean of a frequency. The other mean variables dealt with the mean of the particular sensor signal meansurement in question.
 
-<p>The data is in wide format, consisting of 181 rows (the first row is the header) and 68 columns.  It is order by the Subject, and then Activity columns.  The Averaged mean and standard deviation variables then follow.  This data set follows the tidy data princples:</p>
+<p>The data is in wide format, consisting of 181 rows (1 row of header variables, and 180 rows of data) and 68 columns.  It is order by the Subject, and then Activity columns.  The Averaged mean and standard deviation variables then follow.  This data set follows the tidy data princples:</p>
 1. Each variable is in a column.
 2. Every row is for a different observation, I.e. the the subject and activity combination is unique.
 3. There is one table for the overall averaging of the data set.
@@ -28,9 +28,9 @@
 <a name="Code book"/>
 # Code book
 <p>The variable definitions are formatted as such:</p>
-> #### Variable Name   (number of characters in value)
->> Definition of the variable
->>> value and meaning of the variable
+* #### Variable Name   (number of characters in value)
+	* Definition of the variable
+		*value and meaning of the variable
  
 > #### Subject (2) 						
 >> Test Volunteer subject number
