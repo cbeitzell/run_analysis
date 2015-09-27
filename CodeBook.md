@@ -28,7 +28,7 @@
 <a name="Code book"/>
 # Code book
 <p>The variable definitions are formatted as such:</p>
-#### Variable Name   (number of characters in value)
+**Variable Name**   (number of characters in value)
   * Definition of the variable
     * value and meaning of the variable
  <p> </p>
