@@ -1,5 +1,5 @@
 # Run Analysis
-<p>This code book is for a tidy data set located in RunAnalysis.txt file. It was created from a data set created in the Human Activity Recognition Using Smartphones tests. (http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) The data from the test was filtered for mean and standard deviation variables, and then averaged to create the tidy data set.  This code book consists of a description of the tidy data, a definition of the variables in the new data set, and a description of the steps taken to transform the data into a tidier version. </p>
+<p>This code book is for a tidy data set located in RunAnalysis.txt file. It was created from a data set created in the Human Activity Recognition Using Smart phones tests. (http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) The data from the test was filtered for mean and standard deviation variables, and then averaged to create the tidy data set.  This code book consists of a description of the tidy data, a definition of the variables in the new data set, and a description of the steps taken to transform the data into a tidier version. </p>
 - [The Data](#The Data)
 - [Code book](#Code book)
 - [Study design](#Study design)
@@ -7,14 +7,14 @@
 <hr>
 <a name="The Data"/>
 # The Data
-<p>The original data was gained from an experiment consisting of 30 volunteers using the Samsung Galaxy S II. During the test volunteers were ask to wear the smartphone on their waste and perform 6 activities (WALKING, WALKING UPSTAIRS, WALKING DOWNSTAIRS, SITTING, STANDING, LAYING).  Data was collected from the accelerometers and gyroscopes, by capturing the 3-axial linear acceleration and 3-axial angular velocity data at a constant rate of 50Hz. From the data 70% were placed into a training set and 30% in to a test set.</p>
+<p>The original data was gained from an experiment consisting of 30 volunteers using the Samsung Galaxy S II. During the test volunteers were ask to wear the smart phone on their waste and perform 6 activities (WALKING, WALKING UPSTAIRS, WALKING DOWNSTAIRS, SITTING, STANDING, LAYING).  Data was collected from the accelerometers and gyroscopes, by capturing the 3-axial linear acceleration and 3-axial angular velocity data at a constant rate of 50Hz. From the data 70% were placed into a training set and 30% in to a test set.</p>
 
 <p>To get the data from the test, "the sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain." (README.txt,http://archive.ics.uci.edu/ml/machine-learning-databases/00341/HAPT Data Set.zip)</p>
 
 <p>The units used for the "accelerations (total and body) are 'g's (gravity of earth -> 9.80665 m/seg2). The gyroscope units are rad/seg." (Notes, http://archive.ics.uci.edu/ml/datasets/Smartphone-Based+Recognition+of+Human+Activities+and+Postural+Transitions#)  The data in the inertial data sets was then compiled into the train and test sets.  The values in those set files are the normalized and bounded values of the inertial data into a -1 to 1 range.  These normalized variables were carried over and transformed into the tidy data set.</p>
 
 <p>To create the tidy data in RunAnalysis.txt, the mean and standard deviation variables were extracted from the two sets.  The sets were then correlated to the subject id and activity for that vector of data. Next the two sets were joined and the average for each variable by subject and activity was measured, and finally ordered and properly labelled.  The methods used are discussed further in the Study design.</p>
-* NOTE: The frequency mean was not included as one of the mean variables as is a measurement used to find the mean of a frequency. The other mean variables dealt with the mean of the particular sensor signal measurement in question. In addition the angle(..gravityMean) were also excluded, as the as parameters of the assignment called strictly for the mean and standard variation variables.  The angle variables would be a measurement of angle between two vectors, and not strictly the mean of a variable.
+* NOTE: The assignment called for the filtering of mean and standard variation variables.  This was interrupted to be strictly mean() and std() variables.  The frequency mean (meanFreq) variable was not included as one of the mean variables, because it is a measurement used to find the center/mean of a frequency, not the mean on the data collected. In addition the angle(..gravityMean) were also excluded, as the angle variables would be a measurement of angle between two vectors, and not strictly the mean of the measured data..
 
 <p>The data is in a wide format, consisting of 181 rows (1 row of header variables, and 180 rows of data) and 68 columns.  It is order by the Subject, and then Activity columns.  The Averaged mean and standard deviation variables then follow.  This data set follows the tidy data principles :</p>
 1. Each variable is in a column.
@@ -52,267 +52,267 @@ Variable Name   (number of characters in each variable)
 
 3. Time.Body.Accelerometer.Mean.X (14)
   * The Mean of the body linear acceleration derived in time for the X axis from the accelerometer.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from 'g's (gravity of earth -> 9.80665 m/seg2)
 
 4. Time.Body.Accelerometer.Mean.Y (14)
   * The Mean of the body linear acceleration derived in time for the Y axis from the accelerometer.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from 'g's (gravity of earth -> 9.80665 m/seg2)
 
 5. Time.Body.Accelerometer.Mean.Z (14)
   * The Mean of the body linear acceleration derived in time for the X axis from the accelerometer.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from 'g's (gravity of earth -> 9.80665 m/seg2)
 
 6. Time.Body.Accelerometer.Standard.Deviation.X (14)
   * The Standard Deviation of the body linear acceleration derived in time for the X axis from the accelerometer.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from 'g's (gravity of earth -> 9.80665 m/seg2)
 
 7. Time.Body.Accelerometer.Standard.Deviation.Y (14)
   * The Standard Deviation of the body linear acceleration derived in time for the Y axis from the accelerometer.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from 'g's (gravity of earth -> 9.80665 m/seg2)
 
 8. Time.Body.Accelerometer.Standard.Deviation.Z (14)
   * The Standard Deviation of the body linear acceleration derived in time for the Z axis from the accelerometer.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from 'g's (gravity of earth -> 9.80665 m/seg2)
 
 9. Time.Gravity.Accelerometer.Mean.X (14)
   * The Mean of the gravity acceleration derived in time for the X axis from the accelerometer.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from 'g's (gravity of earth -> 9.80665 m/seg2)
 
 10. Time.Gravity.Accelerometer.Mean.Y (14)
   * The Mean of the gravity acceleration derived in time for the Y axis from the accelerometer.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from 'g's (gravity of earth -> 9.80665 m/seg2)
 
 11. Time.Gravity.Accelerometer.Mean.Z (14)
   * The Mean of the gravity acceleration derived in time for the Z axis from the accelerometer.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from 'g's (gravity of earth -> 9.80665 m/seg2)
 
 12. Time.Gravity.Accelerometer.Standard.Deviation.X (14)
   * The Standard Deviation of the gravity acceleration derived in time for the X axis from the accelerometer.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from 'g's (gravity of earth -> 9.80665 m/seg2)
 
 13. Time.Gravity.Accelerometer.Standard.Deviation.Y (14)
   * The Standard Deviation of the gravity acceleration derived in time for the Y axis from the accelerometer.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from 'g's (gravity of earth -> 9.80665 m/seg2)
 
 14. Time.Gravity.Accelerometer.Standard.Deviation.Z (14)
   * The Standard Deviation of the gravity acceleration derived in time for the Z axis from the accelerometer.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from 'g's (gravity of earth -> 9.80665 m/seg2)
 
 15. Time.Body.Accelerometer.Jerk.Mean.X (14)
   * The Mean of the jerk signals obtained from the body linear acceleration derived in time for the X axis of the accelerometer.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from 'g's (gravity of earth -> 9.80665 m/seg2)
 
 16. Time.Body.Accelerometer.Jerk.Mean.Y (14)
   * The Mean of the jerk signals obtained from the body linear acceleration derived in time for the Y axis of the accelerometer.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from 'g's (gravity of earth -> 9.80665 m/seg2)
 
 17. Time.Body.Accelerometer.Jerk.Mean.Z (14)
   * The Mean of the jerk signals obtained from the body linear acceleration derived in time for the Z axis of the accelerometer.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from 'g's (gravity of earth -> 9.80665 m/seg2)
 
 18. Time.Body.Accelerometer.Jerk.Standard.Deviation.X (14)
   * The Standard Deviation of the jerk signals obtained from the body linear acceleration derived in time for the X axis of the accelerometer.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from 'g's (gravity of earth -> 9.80665 m/seg2)
 
 19. Time.Body.Accelerometer.Jerk.Standard.Deviation.Y (14)
   * The Standard Deviation of the jerk signals obtained from the body linear acceleration derived in time for the Y axis of the accelerometer.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from 'g's (gravity of earth -> 9.80665 m/seg2)
 
 20. Time.Body.Accelerometer.Jerk.Standard.Deviation.Z (14)
   * The Standard Deviation of the jerk signals obtained from the body linear acceleration derived in time for the Z axis of the accelerometer.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from 'g's (gravity of earth -> 9.80665 m/seg2)
 
 21. Time.Body.Gyroscope.Mean.X (14)
   * The Mean of the body angular velocity derived in time for the X axis from the gyroscope.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from rad/seg
 
 22. Time.Body.Gyroscope.Mean.Y (14)
   * The Mean of the body angular velocity derived in time for the Y axis from the gyroscope.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from rad/seg
 
 23. Time.Body.Gyroscope.Mean.Z (14)
   * The Mean of the body angular velocity derived in time for the Z axis from the gyroscope.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from rad/seg
 
 24. Time.Body.Gyroscope.Standard.Deviation.X (14)
   * The Standard Deviation of the body angular velocity derived in time for the X axis from the gyroscope.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from rad/seg
 
 25. Time.Body.Gyroscope.Standard.Deviation.Y (14)
   * The Standard Deviation of the body angular velocity derived in time for the Y axis from the gyroscope.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from rad/seg
 
 26. Time.Body.Gyroscope.Standard.Deviation.Z (14)
   * The Standard Deviation of the body angular velocity derived in time for the Z axis from the gyroscope.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from rad/seg
 
 27. Time.Body.Gyroscope.Jerk.Mean.X (14)
   * The Mean of the jerk signals obtained from the body angular velocity derived in time for the X axis of the gyroscope.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from rad/seg
 
 28. Time.Body.Gyroscope.Jerk.Mean.Y (14)
   * The Mean of the jerk signals obtained from the body angular velocity derived in time for the Y axis of the gyroscope.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from rad/seg
 
 29. Time.Body.Gyroscope.Jerk.Mean.Z (14)
   * The Mean of the jerk signals obtained from the body angular velocity derived in time for the Z axis of the gyroscope.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from rad/seg
 
 30. Time.Body.Gyroscope.Jerk.Standard.Deviation.X (14)
   * The Standard Deviation of the jerk signals obtained from the body angular velocity derived in time for the X axis of the gyroscope.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from rad/seg
 
 31. Time.Body.Gyroscope.Jerk.Standard.Deviation.Y (14)
   * The Standard Deviation of the jerk signals obtained from the body angular velocity derived in time for the Y axis of the gyroscope.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from rad/seg
 
 32. Time.Body.Gyroscope.Jerk.Standard.Deviation.Z (14)
   * The Standard Deviation of the jerk signals obtained from the body angular velocity derived in time for the Z axis of the gyroscope.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from rad/seg
 
 33. Time.Body.Accelerometer.Mag.Mean (14)
   * The Mean for the magnitude of the body linear acceleration derived in time for the X,Y,Z axis from the accelerometer.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from 'g's (gravity of earth -> 9.80665 m/seg2)
 
 34. Time.Body.Accelerometer.Mag.Standard.Deviation (14)
   * The Standard Deviation for the magnitude of the body linear acceleration derived in time for the X,Y,Z axis from the accelerometer.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from 'g's (gravity of earth -> 9.80665 m/seg2)
 
 35. Time.Gravity.Accelerometer.Mag.Mean (14)
   * The Mean for the magnitude of the gravity acceleration derived in time for the X,Y,Z axis from the accelerometer.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from 'g's (gravity of earth -> 9.80665 m/seg2)
 
 36. Time.Gravity.Accelerometer.Mag.Standard.Deviation (14)
   * The Standard Deviation for the magnitude of the gravity acceleration derived in time from the accelerometer.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from 'g's (gravity of earth -> 9.80665 m/seg2)
 
 37. Time.Body.Accelerometer.Jerk.Mag.Mean (14)
   * The Mean for the magnitude of the jerk signals obtained from the body linear acceleration derived in time from the accelerometer.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from 'g's (gravity of earth -> 9.80665 m/seg2)
 
 38. Time.Body.Accelerometer.Jerk.Mag.Standard.Deviation (14)
   * The Standard Deviation for the magnitude of the jerk signals obtained from the body linear acceleration derived in time from the accelerometer.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from 'g's (gravity of earth -> 9.80665 m/seg2)
 
 39. Time.Body.Gyroscope.Mag.Mean (14)
   * The Mean for the magnitude obtained from the body angular velocity derived in time from the gyroscope.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from rad/seg
 
 40. Time.Body.Gyroscope.Mag.Standard.Deviation (14)
   * The Standard Deviation for the magnitude obtained from the body angular velocity derived in time from the gyroscope.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from rad/seg
 
 41. Time.Body.Gyroscope.Jerk.Mag.Mean (14)
   * The Mean for the magnitude of the jerk signals obtained from the body angular velocity derived in time from the gyroscope.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from rad/seg
 
 42. Time.Body.Gyroscope.Jerk.Mag.Standard.Deviation (14)
   * The Standard Deviation for the magnitude of the jerk signals obtained from the body angular velocity derived in time from the gyroscope.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from rad/seg
 
 43. Frequency.Body.Accelerometer.Mean.X (14)
   * Fast Fourier Transform applied to the Mean of the body linear acceleration derived in time for the X axis from the accelerometer.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from 'g's (gravity of earth -> 9.80665 m/seg2)
 
 44. Frequency.Body.Accelerometer.Mean.Y (14)
   * Fast Fourier Transform applied to the Mean of the body linear acceleration derived in time for the Y axis from the accelerometer.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from 'g's (gravity of earth -> 9.80665 m/seg2)
 
 45. Frequency.Body.Accelerometer.Mean.Z (14)
   * Fast Fourier Transform applied to the Mean of the body linear acceleration derived in time for the X axis from the accelerometer.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from 'g's (gravity of earth -> 9.80665 m/seg2)
 
 46. Frequency.Body.Accelerometer.Standard.Deviation.X (14)
   * Fast Fourier Transform applied to the Standard Deviation of the body linear acceleration derived in time for the X axis from the accelerometer.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from 'g's (gravity of earth -> 9.80665 m/seg2)
 
 47. Frequency.Body.Accelerometer.Standard.Deviation.Y (14)
   * Fast Fourier Transform applied to the Standard Deviation of the body linear acceleration derived in time for the Y axis from the accelerometer.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from 'g's (gravity of earth -> 9.80665 m/seg2)
 
 48. Frequency.Body.Accelerometer.Standard.Deviation.Z (14)
   * Fast Fourier Transform applied to the Standard Deviation of the body linear acceleration derived in time for the Z axis from the accelerometer.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from 'g's (gravity of earth -> 9.80665 m/seg2)
 
 49. Frequency.Body.Accelerometer.Jerk.Mean.X (14)
   * Fast Fourier Transform applied to the Mean of the jerk signals obtained from the body linear acceleration derived in time for the X axis of the accelerometer.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from 'g's (gravity of earth -> 9.80665 m/seg2)
 
 50. Frequency.Body.Accelerometer.Jerk.Mean.Y (14)
   * Fast Fourier Transform applied to the Mean of the jerk signals obtained from the body linear acceleration derived in time for the Y axis of the accelerometer.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from 'g's (gravity of earth -> 9.80665 m/seg2)
 
 51. Frequency.Body.Accelerometer.Jerk.Mean.Z (14)
   * Fast Fourier Transform applied to the Mean of the jerk signals obtained from the body linear acceleration derived in time for the Z axis of the accelerometer.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from 'g's (gravity of earth -> 9.80665 m/seg2)
 
 52. Frequency.Body.Accelerometer.Jerk.Standard.Deviation.X (14)
   * Fast Fourier Transform applied to the Standard Deviation of the jerk signals obtained from the body linear acceleration derived in time for the X axis of the accelerometer.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from 'g's (gravity of earth -> 9.80665 m/seg2)
 
 53. Frequency.Body.Accelerometer.Jerk.Standard.Deviation.Y (14)
   * Fast Fourier Transform applied to the Standard Deviation of the jerk signals obtained from the body linear acceleration derived in time for the Y axis of the accelerometer.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from 'g's (gravity of earth -> 9.80665 m/seg2)
 
 54. Frequency.Body.Accelerometer.Jerk.Standard.Deviation.Z (14)
   * Fast Fourier Transform applied to the Standard Deviation of the jerk signals obtained from the body linear acceleration derived in time for the Z axis of the accelerometer.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from 'g's (gravity of earth -> 9.80665 m/seg2)
 
 55. Frequency.Body.Gyroscope.Mean.X (14)
   * Fast Fourier Transform applied to the Mean of the body angular velocity derived in time for the X axis from the gyroscope.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from rad/seg
 
 56. Frequency.Body.Gyroscope.Mean.Y (14)
   * Fast Fourier Transform applied to the Mean of the body angular velocity derived in time for the Y axis from the gyroscope.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from rad/seg
 
 57. Frequency.Body.Gyroscope.Mean.Z (14)
   * Fast Fourier Transform applied to the Mean of the body angular velocity derived in time for the Z axis from the gyroscope.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from rad/seg
 
 58. Frequency.Body.Gyroscope.Standard.Deviation.X (14)
   * Fast Fourier Transform applied to the Standard Deviation of the body angular velocity derived in time for the X axis from the gyroscope.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from rad/seg
 
 59. Frequency.Body.Gyroscope.Standard.Deviation.Y (14)
   * Fast Fourier Transform applied to the Standard Deviation of the body angular velocity derived in time for the Y axis from the gyroscope.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from rad/seg
 
 60. Frequency.Body.Gyroscope.Standard.Deviation.Z (14)
   * Fast Fourier Transform applied to the Standard Deviation of the body angular velocity derived in time for the Z axis from the gyroscope.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from rad/seg
 
 61. Frequency.Body.Accelerometer.Mag.Mean (14)
   * Fast Fourier Transform applied to the Mean for the magnitude of the body linear acceleration derived in time for the X,Y,Z axis from the accelerometer.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from 'g's (gravity of earth -> 9.80665 m/seg2)
 
 62. Frequency.Body.Accelerometer.Mag.Standard.Deviation (14)
   * Fast Fourier Transform applied to the Standard Deviation for the magnitude of the body linear acceleration derived in time for the X,Y,Z axis from the accelerometer.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from 'g's (gravity of earth -> 9.80665 m/seg2)
 
 63. Frequency.BodyBody.Accelerometer.Jerk.Mag.Mean (14)
   * Fast Fourier Transform applied to the Mean for the magnitude of the jerk signals obtained from the body linear acceleration derived in time from the accelerometer.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from 'g's (gravity of earth -> 9.80665 m/seg2)
 
 64. Frequency.BodyBody.Accelerometer.Jerk.Mag.Standard.Deviation (14)
   * Fast Fourier Transform applied to the Standard Deviation for the magnitude of the jerk signals obtained from the body linear acceleration derived in time from the accelerometer.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from 'g's (gravity of earth -> 9.80665 m/seg2)
 
 65. Frequency.BodyBody.Gyroscope.Mag.Mean (14)
   * Fast Fourier Transform applied to the Mean for the magnitude obtained from the body angular velocity derived in time from the gyroscope.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from rad/seg
 
 66. Frequency.BodyBody.Gyroscope.Mag.Standard.Deviation (14)
   * Fast Fourier Transform applied to the Standard Deviation for the magnitude obtained from the body angular velocity derived in time from the gyroscope.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from rad/seg
 
 67. Frequency.BodyBody.Gyroscope.Jerk.Mag.Mean (14)
   * Fast Fourier Transform applied to the Mean for the magnitude of the jerk signals obtained from the body angular velocity derived in time from the gyroscope.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from rad/seg
 
 68. Frequency.BodyBody.Gyroscope.Jerk.Mag.Standard.Deviation (14)
   * Fast Fourier Transform applied to the Standard Deviation for the magnitude of the jerk signals obtained from the body angular velocity derived in time from the gyroscope.
-    * -1.00000000000 .. 1.00000000000
+    * -1.00000000000 .. 1.00000000000 .Normalized values derived from rad/seg
 
 <hr>
 <a name="Study design"/>
