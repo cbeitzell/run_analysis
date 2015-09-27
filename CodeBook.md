@@ -29,7 +29,7 @@
 # Code book
 <p>The variable definitions are formatted as such:</p>
 ```
-**Variable Name**   (number of characters in value)
+Variable Name   (number of characters in each variable)
   * Definition of the variable
     * value and meaning of the variable
 ```
