@@ -1,5 +1,5 @@
 # Run Analysis
-<p>This code book is for a tidy data set located in RunAnalysis.txt file. It was created from a data set created in the Human Activity Recognition Using Smart phones tests. (http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) The data from the test was filtered for mean and standard deviation variables, and then averaged to create the tidy data set.  This code book consists of a description of the tidy data, a definition of the variables in the new data set, and a description of the steps taken to transform the data into a tidier version. </p>
+<p>This code book is for a tidy data set located in the RunAnalysis.txt file. It was created from a data set created in the Human Activity Recognition Using Smart phones experiement. (http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) The data from the test was filtered for mean and standard deviation variables, and then averaged to create a new tidy data set.  This code book consists of a description of the tidy data, a definition of the variables in the new data set, and a description of the steps taken to transform the data into a tidier version. </p>
 - [The Data](#The Data)
 - [Code book](#Code book)
 - [Study design](#Study design)
@@ -9,14 +9,14 @@
 # The Data
 <p>The original data was gained from an experiment consisting of 30 volunteers using the Samsung Galaxy S II. During the test volunteers were ask to wear the smart phone on their waste and perform 6 activities (WALKING, WALKING UPSTAIRS, WALKING DOWNSTAIRS, SITTING, STANDING, LAYING).  Data was collected from the accelerometers and gyroscopes, by capturing the 3-axial linear acceleration and 3-axial angular velocity data at a constant rate of 50Hz. From the data 70% were placed into a training set and 30% in to a test set.</p>
 
-<p>To get the data from the test, "the sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain." (README.txt,http://archive.ics.uci.edu/ml/machine-learning-databases/00341/HAPT Data Set.zip)</p>
+<p>To get the data from the test, "the sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain." (README.txt,http://archive.ics.uci.edu/ml/machine-learning-databases/00341/HAPT Data Set.zip) This created a series of inertial data sets.</p>
 
-<p>The units used for the "accelerations (total and body) are 'g's (gravity of earth -> 9.80665 m/seg2). The gyroscope units are rad/seg." (Notes, http://archive.ics.uci.edu/ml/datasets/Smartphone-Based+Recognition+of+Human+Activities+and+Postural+Transitions#)  The data in the inertial data sets was then compiled into the train and test sets.  The values in those set files are the normalized and bounded values of the inertial data into a -1 to 1 range.  These normalized variables were carried over and transformed into the tidy data set.</p>
+<p>The units used for the "accelerations (total and body) are 'g's (gravity of earth -> 9.80665 m/seg2). The gyroscope units are rad/seg." (Notes, http://archive.ics.uci.edu/ml/datasets/Smartphone-Based+Recognition+of+Human+Activities+and+Postural+Transitions#)  The data in the inertial data sets were then compiled into the train and test sets.  The values in the train and test sets are were normalized and bounded into a -1 to 1 range.  For the RunAnalysis.txt tidy data the normalized data from the test and train sets were merged and averaged by the subject ID and activity .</p>
 
 <p>To create the tidy data in RunAnalysis.txt, the mean and standard deviation variables were extracted from the two sets.  The sets were then correlated to the subject id and activity for that vector of data. Next the two sets were joined and the average for each variable by subject and activity was measured, and finally ordered and properly labelled.  The methods used are discussed further in the Study design.</p>
-* NOTE: The assignment called for the filtering of mean and standard variation variables.  This was interrupted to be strictly mean() and std() variables.  The frequency mean (meanFreq) variable was not included as one of the mean variables, because it is a measurement used to find the center/mean of a frequency, not the mean on the data collected. In addition the angle(..gravityMean) were also excluded, as the angle variables would be a measurement of angle between two vectors, and not strictly the mean of the measured data..
+* NOTE: This assignment called for the filtering out of the mean and standard variation variables.  This was interpreted to be strictly mean() and std() variables.  The frequency mean (meanFreq) variable was not included as one of the mean variables, because it is a measurement used to find the center/mean of a frequency, not the mean on the data collected. In addition the angle(..gravityMean) were also excluded, as the angle variables would be a measurement of angle between two vectors, and not strictly the mean of a the measured data.
 
-<p>The data is in a wide format, consisting of 181 rows (1 row of header variables, and 180 rows of data) and 68 columns.  It is order by the Subject, and then Activity columns.  The Averaged mean and standard deviation variables then follow.  This data set follows the tidy data principles :</p>
+<p>The data is in a wide format, consisting of 181 rows (1 row of header variables, and 180 rows of data) and 68 columns.  It is order by the Subject, and then Activity columns.  This data set follows the tidy data principles :</p>
 1. Each variable is in a column.
 2. Every row is for a different observation, I.e. the subject and activity combination is unique.
 3. There is one table for the overall averaging of the data set.
@@ -334,7 +334,7 @@ Variable Name   (number of characters in each variable)
 <p>The first step was to read in the raw variable names.</p>
 * featureDef <- read.table("features.txt")
 <p>The features.txt file contained both the current variable names of the data sets, but also the index location.  This will be used later to pull out the std() and mean() variables.</p>
-<p>Next the it was useful to pull out the column numbers and names strictly for mean and standard deviation.</p>
+<p>Next it was useful to pull out the column numbers and names strictly for mean and standard deviation.</p>
 * meanStdList <- featureDef[grepl("^.*mean..$|^.*std..$|^.*mean..-[XYZ]$|^.*std..-[XYZ]$",featureDef$V2, perl = TRUE),]
 <p>Then convert the variable names into something more meaningful. To do this a simple replacement of key words was used.</p>
 * featureDef$V2 <- gsub("^f","Frequency.",gsub("^t","Time.",gsub("[:():]","",featureDef$V2)))
@@ -345,7 +345,7 @@ Variable Name   (number of characters in each variable)
 * featureDef$V2 <- gsub("Mag",".Mag",featureDef$V2)
 <p>see the reference table for a listing of variable transformations.</p>
 - [Variables](#Variables)
-<p>Finally in the label creation step was to get the list of activity list.  Again this file would be useful as it not only contained an English description of the activity, but the corresponding activity number to be correlated to the data sets.</p>
+<p>Finally in the label creation step, was to get the list of activity list.  Again this file would be useful as it not only contained an English description of the activity, but the corresponding activity number to be correlated to the data sets.</p>
 * activityDef <- read.table("activity_labels.txt")
 
 <p>With all of the labels gained, the data sets could be created.  A set was created for both the training and test.</p>
@@ -357,7 +357,7 @@ Variable Name   (number of characters in each variable)
 *        setwd(dirTT)
 <p>Read in the data set and adds the variable names to all data.  The colN contains is the list of all modified variable names that was manipulated from the features.txt file.  In doing this the column names are preset, and only need to have the mean and std variables pulled out.  Using the read.table function was the easiest method for pulling the data into R.  Fread would have been faster and would have allowed the initial filtering of the columns.  However but speed was not a factor, and fread was causing some issues locally.</p>
 *        X <- read.table(paste(c("X_",dirTT,".txt"), collapse = ""), col.names = colN)
-<p>Next was to read in the activity list for that dataset and translate it to a descriptive name.</p>
+<p>Next was to read in the activity list for that dataset and translate it to a descriptive name, by joining the activities used in the dataset with the activity names to create a list of names instead of numbers. </p>
 *        y <- read.table(paste(c("y_",dirTT,".txt"), collapse = ""))
 *        joinY <- join(y,actDef)
 <p>Then read in the subject list for that data set.</p>
@@ -369,7 +369,7 @@ Variable Name   (number of characters in each variable)
 *        returnDF <- cbind(Subject = subject$V1, Activity = joinY$V2, X)
 *        return(returnDF)
 * }
-<p>With the new datasets for training and test, the data can be unioned and ordered by Subject and Activity.</p>
+<p>With the new datasets for training and test, the data can be combined and ordered by Subject and Activity.</p>
 * totalDF <- arrange(rbind(trainDF,testDF), Subject, Activity)
 <p>Still this is the full data, not the averaged. The data needs to be averaged for every Subject and Activity.  To do that the lappy function is used to loop through the data applying the mean function across each variable except Subject and Activity.</p>
 * totalDT <- as.data.table(totalDF)[,lapply(.SD,mean), by=list(Subject,Activity)]
@@ -649,4 +649,3 @@ Variable Name   (number of characters in each variable)
 		<td>Frequency.BodyBody.Gyroscope.Jerk.Mag.Standard.Deviation</td>
 	</tr>
 </table>
-

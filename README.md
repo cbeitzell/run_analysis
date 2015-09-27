@@ -47,7 +47,7 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 featureDef <- read.table("features.txt")
 ```
 <p> Next it creates a data frame from the feature variable name, getting the mean() and std() variables.  This will be used later to filter out the desired variables from the X_test and X_train data sets. The filtering is done by the use of the grepl function, and regex expressions.</p>
-<p>This assignment called for the filtering out of the mean and standard variation variables.  This was interrupted to be strictly mean() and std() variables.  The frequency mean (meanFreq) variable was not included as one of the mean variables, because it is a measurement used to find the center/mean of a frequency, not the mean on the data collected. In addition the angle(..gravityMean) were also excluded, as the angle variables would be a measurement of angle between two vectors, and not strictly the mean of a the measured data.</p> 
+<p>This assignment called for the filtering out of the mean and standard variation variables.  This was interpreted to be strictly mean() and std() variables.  The frequency mean (meanFreq) variable was not included as one of the mean variables, because it is a measurement used to find the center/mean of a frequency, not the mean on the data collected. In addition the angle(..gravityMean) were also excluded, as the angle variables would be a measurement of angle between two vectors, and not strictly the mean of a the measured data.</p> 
 ```
 meanStdList <- featureDef[grepl("^.*mean..$|^.*std..$|^.*mean..-[XYZ]$|^.*std..-[XYZ]$",featureDef$V2, perl = TRUE),]
 ```
